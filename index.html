@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo list</title>
+    <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+    <!-- main todo list  -->
+
+    <div class="container" id="body">
+        <h1 class="heading" id="heading">Your list is empty!</h1>
+        <div class="todo-container" id="todo_cont">
+            <button class="add-btn" id="addTask__btn">New Task</button>
+        </div>
+    </div>
+
+    <!-- modal  -->
+
+    <div class="modal-flex">
+        <div class="modal-high" id="modal">
+            <div class="modal-container">
+
+                <!-- gsap element  -->
+                <div class="added-animation-cont">
+
+                    <div class="circle">
+                        <span class="material-symbols-outlined arrow">
+                            done
+                        </span>
+                    </div>
+                    <div class="header-animate">
+                        <h1 class="animate-heading">Item Added Succesfully!</h1>
+                    </div>
+                    
+                </div>
+
+                <h1 class="modal_heading">Enter your task</h1>
+                <div class="modal">
+                    <input type="text" class="input" id="input__field" />
+                    <span class="input_label" id="input__label">Enter the task</span>
+                </div>
+                <p id="alert">Please enter a task!</p>
+                <div class="button-cont">
+                    <button id="add_btn" class="modal-btn">Add</button>
+                    <button id="cancel_btn" class="modal-btn red-btn">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- gsap script  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>
+    <!-- local js script  -->
+    <script type="module" src="app.js"></script>
+</body>
+
+</html>
